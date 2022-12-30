@@ -9,8 +9,6 @@ interface ILoadingData {
   setLoading: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-//? Hook personalizado para
-
 const LoadingContext = createContext({} as ILoadingData);
 
 export const LoadingProvider = ({ children }: Props) => {

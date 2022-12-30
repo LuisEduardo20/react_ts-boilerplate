@@ -15,8 +15,6 @@ interface IAuthContextData {
   handleLogout: unknown;
 }
 
-//? Hook personalizado para operações de autenticação e etc...
-
 const AuthContext = createContext({} as any);
 
 const AuthProvider = ({ children }: IAuthProps) => {

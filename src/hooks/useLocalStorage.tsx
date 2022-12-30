@@ -5,8 +5,6 @@ type Props = {
   initialValue: any;
 };
 
-//? Hook Personalizado para uso do local storage
-
 export const useLocalStorage = ({ key, initialValue }: Props) => {
   const [storedValue, setStoredValue] = useState(() => {
     if (typeof window === "undefined") {
