@@ -1,3 +1,3 @@
-export const LOGIN = () => "";
+export const LOGIN = () => "/";
 
-export const HOME = () => "";
+export const HOME = () => "/home";
