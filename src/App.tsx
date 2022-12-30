@@ -8,7 +8,7 @@ import { GlobalStyle } from "./styles/globalStyles";
 import { AppProvider } from "./hooks";
 import Theme from "./styles/theme";
 import Loading from "./components/Loading";
-import RoutesComponent from "@/routes/routes.component";
+import Routes from "./routes/routes";
 
 //? O AppProvider é um provedor que engloba outros providers da pasta dos hooks
 //? O ThemeProvider é um provedor que injeta as cores definidas no arquivo theme.ts em todos os components
@@ -21,7 +21,7 @@ function App() {
       <ThemeProvider theme={Theme}>
         <Loading />
         <GlobalStyle />
-        <RoutesComponent />
+        <Routes />
         <ToastContainer theme="colored" />
       </ThemeProvider>
     </AppProvider>
