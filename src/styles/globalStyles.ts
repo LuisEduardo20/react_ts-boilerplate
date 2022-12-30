@@ -20,4 +20,7 @@ export const GlobalStyle = createGlobalStyle`
   button {
     cursor: pointer;
   }
+  .spinner {
+    z-index: 5;
+  }
 `;

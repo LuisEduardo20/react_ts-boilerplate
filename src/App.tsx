@@ -10,6 +10,11 @@ import Theme from "./styles/theme";
 import Loading from "./components/Loading";
 import RoutesComponent from "@/routes/routes.component";
 
+//? O AppProvider é um provedor que engloba outros providers da pasta dos hooks
+//? O ThemeProvider é um provedor que injeta as cores definidas no arquivo theme.ts em todos os components
+//? O Loading é o componente de loading carregado para poder usar em toda a aplicação
+//? O ToastContainer é o componente que permite usar o toast em toda aplicação
+
 function App() {
   return (
     <AppProvider>
