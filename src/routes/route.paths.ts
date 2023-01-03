@@ -1,3 +1,5 @@
-export const LOGIN = () => "/";
+import * as Pages from "@/pages";
 
-export const HOME = () => "/home";
+export const LOGIN = () => Pages.Login;
+
+export const HOME = () => Pages.Home;
