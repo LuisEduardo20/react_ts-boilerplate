@@ -11,8 +11,8 @@ interface IAuthProps {
 
 interface IAuthContextData {
   userData: unknown;
-  handleLogin: unknown;
-  handleLogout: unknown;
+  handleLogin: (formData: unknown) => Promise<void>;
+  handleLogout: () => void;
 }
 
 const AuthContext = createContext({} as any);
