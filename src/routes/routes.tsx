@@ -33,9 +33,7 @@ const Routes: React.FC = () => {
     <BrowserRouter>
       <Router>
         <Route element={<WrapperRoute redirect="/" isPrivate={false} />}>{routedUnprotected}</Route>
-        <Route element={<WrapperRoute redirect="/admin/login" isPrivate={true} />}>
-          {routedProtected}
-        </Route>
+        <Route element={<WrapperRoute redirect="/" isPrivate={true} />}>{routedProtected}</Route>
         <Route path="*" element={<Navigate replace to="/" />} />
       </Router>
     </BrowserRouter>
