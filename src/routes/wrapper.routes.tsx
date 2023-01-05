@@ -1,6 +1,5 @@
-// import { Route, Navigate, Outlet } from "react-router-dom";
-import { Route, Navigate, Outlet } from "react-router-dom";
-// import { getAuthData } from "../services/localStorage";
+import { useAuth } from "@/hooks/useAuth";
+import { Navigate, Outlet } from "react-router-dom";
 
 interface IWrapperRoute {
   redirect?: string;
@@ -8,7 +7,7 @@ interface IWrapperRoute {
 }
 
 const WrapperRoute: React.FC<IWrapperRoute> = ({ isPrivate, redirect = "/" }) => {
-  // const token = getAuthData();
+  // const userData = useAuth();
   const token = "";
 
   if (!token && isPrivate) {
